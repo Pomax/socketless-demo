@@ -1,6 +1,6 @@
 {
   "name": "socketless-demo",
-  "version": "v1.0.0",
+  "version": "1.0.1",
   "description": "Demo code for using socketless",
   "scripts": {
     "prettier": "prettier --write ./**/*.js",
