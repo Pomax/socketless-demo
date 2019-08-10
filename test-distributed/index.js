@@ -8,13 +8,13 @@ const spawn = require("child_process").spawn;
 const spawnConfig = { stdio: "inherit", detached: true };
 
 // First, we spawn a process that will run the server:
-spawn(cmd, ["run", "simple:distributed:server"], spawnConfig);
+spawn(cmd, ["run", "distributed:server"], spawnConfig);
 
 // And then we spawn three more processes that will each run a client:
 let clients = TOTAL_CLIENTS;
 (function runClient() {
   if (clients--) {
-    spawn(cmd, ["run", "simple:distributed:client"], spawnConfig);
+    spawn(cmd, ["run", "distributed:client"], spawnConfig);
     setTimeout(runClient, 1000);
   }
 })();

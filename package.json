@@ -4,13 +4,13 @@
   "description": "Demo code for using socketless",
   "scripts": {
     "prettier": "prettier --write ./**/*.js",
-    "game": "node game/index.js",
-    "game:client": "node game/start-web-client.js",
     "simple": "node simple/index.js",
-    "simple:distributed": "node test-distributed/index.js",
-    "simple:web": "node simple-web/index.js",
-    "simple:distributed:client": "node test-distributed/test-client.js",
-    "simple:distributed:server": "node test-distributed/test-server.js"
+    "distributed": "node test-distributed/index.js",
+    "distributed:client": "node test-distributed/test-client.js",
+    "distributed:server": "node test-distributed/test-server.js",
+    "web": "node simple-web/index.js",
+    "game": "node game/index.js",
+    "game:client": "node game/start-web-client.js"
   },
   "repository": {
     "type": "git",
@@ -30,7 +30,7 @@
   },
   "homepage": "https://github.com/Pomax/socketless/tree/master/socketless-demo#readme",
   "dependencies": {
-    "socketless": "^0.11.11"
+    "socketless": "^0.11.12"
   },
   "devDependencies": {
     "prettier": "^1.18.2"

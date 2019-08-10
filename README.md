@@ -16,14 +16,14 @@ The demo starts up a server, followed by several clients. 10 seconds after joini
 All of this is coordinated in `index.js`, with the client/server API declared in the `Client.js` and `Server.js` files.
 
 
-## A distributed simple example: `npm run simple:distributed`
+## A distributed simple example: `npm run distributed`
 
 This is the same test as the simple test, where each client is executed as an independent process (using the `spawn` command), to demonstrate things still work when the client and server code has no knowledge of each other, beyond knowing the shared API.
 
 Like in the simple example, running of the clients and server is coordinated in `index.js`, and the client/server API is literally the same as the `simple` example (it uses those exact same files). However, instead of creating objects directly, `index.js` will spawn external processes that run `test-server.js` and `test-client.js`, which build the server and clients respectively, in order to demonstrate that server and client don't need to be created and run by the same script.
 
 
-## A simple example with web clients: `npm run simple:web`
+## A simple example with web clients: `npm run web`
 
 This test is similar to the `simple` demo, except it add web clients to the mix.
 
