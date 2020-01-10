@@ -1,7 +1,7 @@
 # Socketless demos
 
 This is a collection of demos that show off how to use the [socketless](https://github.com/Pomax/socketless) framework for websocket client/server implementations.
-There are currently three demos: two simple functionality demos, and one full fledged multiplayer game.
+There are currently four demos: three simple functionality demos, and one full fledged multiplayer game.
 
   - [a simple example similar to the code above, with one web client](#a-simple-example-npm-run-simple),
   - [a true distributed version of the simple example, minus the web client](#a-distributed-simple-example-npm-run-simple-distributed),
