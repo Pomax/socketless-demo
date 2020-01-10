@@ -41,7 +41,7 @@ You'll notice that there is a `public` directory in the web demo: this is where 
 
 This creates a web client similar to a regular client, by telling it which URL the server is running on, but it also tells the webclient what the `public` directory is that it should use to server web content from. Finally, the third argument turns on direct syncing, rather than syncing through a `state` variable. This is mostly because it makes for easier code for a demo (see the `socketless` documentation on the difference between direct and state-based syncing), but if you want an example that relies on syncing through a `state` variable, read on...
 
-## Multiplayer mahjong: `npm run game`.
+## Multiplayer mahjong: `npm run game`
 
 This is an ***elaborate example*** of how you can use `socketless` to implement a multiplayer game with all the bells and whistles you need, with client/web synchronisation through a "shared" `state` variable, with quite a lot of code for coordinating a simple "lobby" of sorts, creating, joining, and starting games, and coordinating play actions both between the clients and the server, as well as between the clients amongst themselves (using broadcasting).
 
